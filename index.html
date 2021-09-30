@@ -7,11 +7,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
      <style>
-         .col{
+         .col,.col-1{
              height: 5rem;
              background-color: yellow;
              border: 2px solid red;
-             font-size: 3rem;
+             font-size: 1rem;
          }
      </style>
 </head>
@@ -27,7 +27,9 @@
 <!-- Bootstrap ke Pass Grid System jo ki ye btata hain ki hamare page ya part ya component mei kitne bhi row ho sakte but un rows ke andhar sirf 12 column hi sakte hain -->
 
 <!-- Niche ek row mei 12 column hain -->
-    <div class="row">
+
+
+    <!-- <div class="row">
         <div class="col">1</div>
         <div class="col">2</div>
         <div class="col">3</div>
@@ -40,7 +42,48 @@
         <div class="col">10</div>
         <div class="col">11</div>
         <div class="col">12</div>
-    </div>
+    </div> -->
+
+
+   <!-- Mei apne ek row mei column ke ratio bhi de sakta taki mujhe sare na use karne pade -->
+
+
+    <!-- <div class="row">
+         <div class="col-3">1</div>
+         <div class="col-2">2</div>
+         <div class="col-7">3</div>
+    </div> -->
+
+
+
+
+
+<!-- Hum grid system mei nesting bhi kar sakte hain yani row ke andhar row -->
+        <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-1">2</div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col">a-1</div>
+                    <div class="col">a-2</div>
+                    <div class="col">a-3</div>
+                    <div class="col">a-4</div>
+                    <div class="col">a-5</div>
+                    <div class="col">a-6</div>
+                    <div class="col">a-7</div>
+                    <div class="col">a-8</div>
+                    <div class="col">a-9</div>
+                    <div class="col">a-10</div>
+                    <div class="col">a-11</div>
+                    <div class="col">a-12</div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
